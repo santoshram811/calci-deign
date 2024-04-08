@@ -1,9 +1,9 @@
 import { Button } from "bootstrap";
 import style from "./ButtonsContainer.module.css";
 
-const ButtonsContainer = () => {
+const ButtonsContainer = ({ onButtonClick }) => {
   const buttonNames = [
-    "c",
+    "C",
     "1",
     "2",
     "+",
@@ -25,7 +25,12 @@ const ButtonsContainer = () => {
   return (
     <div className={style.buttonsContainer}>
       {buttonNames.map((buttonName) => (
-        <button className={style.button}>{buttonName}</button>
+        <button
+          className={style.button}
+          onClick={() => onButtonClick(buttonName)}
+        >
+          {buttonName}
+        </button>
       ))}
     </div>
   );

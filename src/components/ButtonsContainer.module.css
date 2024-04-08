@@ -9,3 +9,9 @@
     height: 45px;
     margin: 3px;
 }
+.buttonsContainer{
+    background-color: darkgoldenrod;
+}
+.button{
+    background-color: darkgreen ;
+}
